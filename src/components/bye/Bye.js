@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './bye.scss';
+//import './bye.scss';
 
 class Bye extends Component {
 	render() {

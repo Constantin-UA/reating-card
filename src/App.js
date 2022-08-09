@@ -1,6 +1,6 @@
 import ReatingChalenge from './components/reatingChalenge/ReatingChalenge';
 import Bye from './components/bye/Bye';
-import './style/app.scss';
+//import './style/app.scss';
 import { Component } from 'react';
 
 class App extends Component {

@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import './reatingChalenge.scss';
+//import './reatingChalenge.scss';
 class ReatingChalenge extends Component {
 	onClick = ({ target }) => {
 		for (let i = 0; i < target.parentElement.children.length; i++) {
