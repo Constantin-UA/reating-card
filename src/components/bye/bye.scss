@@ -1,0 +1,48 @@
+@import '../../style/variables';
+
+.bye {
+	background-color: $veryDarkBlue;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	//font-size: calc(10px + 2vmin);
+	&__wrapper {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+		background-color: $darkBlue;
+		width: 375px;
+		height: 410px;
+		border-radius: 10%;
+		padding: 10px 20px 10px 20px;
+	}
+	&__select {
+		border: 1px solid $mediumGrey;
+		background-color: $mediumGrey;
+		color: $primary;
+		border-radius: 25px;
+		padding: 5px 20px;
+		font-size: 16px;
+		align-items: center;
+		justify-content: center;
+		display: flex;
+	}
+	&__title {
+		font-size: 28px;
+		font-weight: bold;
+		color: $white;
+	}
+	&__descr {
+		color: $lightGrey;
+		font-size: 15px;
+		text-align: center;
+		p {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

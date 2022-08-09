@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import ReatingChalenge from './components/reatingChalenge/ReatingChalenge';
+import Bye from './components/bye/Bye';
+import './style/app.scss';
+import { Component } from 'react';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+	state = {
+		select: null,
+		thank: false,
+	};
+	onSelect = (select) => {
+		this.setState({ select });
+	};
+	onSubmit = () => {
+		this.setState({ thank: true });
+	};
+	render() {
+		return (
+			<div className="App">
+				{this.state.thank ? (
+					<Bye select={this.state.select} />
+				) : (
+					<ReatingChalenge onSelect={this.onSelect} onSubmit={this.onSubmit} />
+				)}
+				<div className="attribution">
+					Challenge by{' '}
+					<a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+						Frontend Mentor
+					</a>
+					. Coded by <a href="#">Konstantin</a>.
+				</div>
+			</div>
+		);
+	}
 }
 
 export default App;
