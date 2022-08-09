@@ -8,5 +8,5 @@ Interactive rating component
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/solutions/react-interactive-rating-component-solution-CbEwv35tN6)
-- Live Site URL: [Add live site URL here](https://reating-card.vercel.app/)
+- Solution URL: [Frontendmentor](https://www.frontendmentor.io/solutions/react-interactive-rating-component-solution-CbEwv35tN6)
+- Live Site URL: [vercel](https://reating-card.vercel.app/)
